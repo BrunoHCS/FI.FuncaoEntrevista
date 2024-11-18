@@ -11,7 +11,7 @@ namespace WebAtividadeEntrevista.Controllers
     public class BeneficiarioController : Controller
     {
         [HttpPost]
-        public JsonResult IncluirBeneficiario(BeneficiarioModel model)
+        public JsonResult Incluir(BeneficiarioModel model)
         {
             BoBeneficiario bo = new BoBeneficiario();
             BoUtils boUtils = new BoUtils();
@@ -44,7 +44,7 @@ namespace WebAtividadeEntrevista.Controllers
         }
 
         [HttpPost]
-        public JsonResult AlterarBeneficiario(BeneficiarioModel model)
+        public JsonResult Alterar(BeneficiarioModel model)
         {
             BoBeneficiario bo = new BoBeneficiario();
 
@@ -71,7 +71,7 @@ namespace WebAtividadeEntrevista.Controllers
         }
 
         [HttpPost]
-        public JsonResult ExcluirBeneficiario(BeneficiarioModel model)
+        public JsonResult Excluir(BeneficiarioModel model)
         {
             BoBeneficiario bo = new BoBeneficiario();
 
